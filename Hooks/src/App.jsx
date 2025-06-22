@@ -29,5 +29,5 @@ function App() {
     </>
   )
 }
-
+//This is how hooks and states are used
 export default App
