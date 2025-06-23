@@ -34,5 +34,6 @@ function App() {
     </>
   )
 }
+//props can make components reusable
 
 export default App
