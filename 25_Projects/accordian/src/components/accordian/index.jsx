@@ -10,6 +10,7 @@ export default function Accordian (){
     setSelected(getCurrentId === selected ? null : getCurrentId)
 }
 const [selected , setSelected] = useState(null);
+const [enab]
      return <div className="wrapper">
         <div className="accordian">
             {
