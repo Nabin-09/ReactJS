@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <h2>Nabin is goat irl</h2>
+      <h2 className='bg-green-500'>Nabin is goat irl</h2>
     </>
   )
 }
