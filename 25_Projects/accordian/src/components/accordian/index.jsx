@@ -1,12 +1,13 @@
 import data from "./data";
 import { useState } from "react";
+import './styles.css'
 
 
 
 export default function Accordian (){
     function handleSingleSelection(getCurrentId){
     console.log(getCurrentId);
-    setSelected(getCurrentId)
+    setSelected(getCurrentId === selected ? null : getCurrentId)
 }
 const [selected , setSelected] = useState(null);
      return <div className="wrapper">
