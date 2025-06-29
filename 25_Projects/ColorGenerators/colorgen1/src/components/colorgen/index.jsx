@@ -20,10 +20,12 @@ export default function RandomColor(){
         for(let i =0 ; i < 6 ; i++){
             hexColor += hex[randomColorUtility(hex.length)]
         }
+        console.log(hexColor)
+        setColor(hexColor)
     }    
 
 
-     function handleCreateRandomHexColor (){
+     function handleCreateRandomRgbColor (){
 
     }    
 
@@ -39,7 +41,10 @@ export default function RandomColor(){
     
         <button onClick={()=> setTypeOfColor('hex')}>Create HEX color</button>
         <button onClick={()=>setTypeOfColor('rgb')}>Create RGB color</button>
-        <button onClick={typeOfColor === 'hex' ? handleCreateRandomHexColor: handleCreateRandomRgbColor}>Create Random color</button>
+        <button onClick={() => typeOfColor === 'hex' ? handleCreateRandomHexColor() : handleCreateRandomRgbColor()}>
+        Create Random color
+        </button>
+
 
 
     </div>
