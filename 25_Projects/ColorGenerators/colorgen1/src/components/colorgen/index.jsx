@@ -25,13 +25,16 @@ export default function RandomColor(){
     }    
 
 
-     function handleCreateRandomRgbColor (){
-        const r = randomColorUtility(256);
-        const g = randomColorUtility(256);
-        const b = randomColorUtility(256);
+function handleCreateRandomRgbColor () {
+    const r = randomColorUtility(256);
+    const g = randomColorUtility(256);
+    const b = randomColorUtility(256);
+    const rgbColor = `rgb(${r},${g},${b})`;
+    
+    setColor(rgbColor);       
+    console.log(rgbColor);   
+}
 
-        setColor(`rgb${r},${g},${b}`)
-    }    
 
     return (
     <div  style = {{
@@ -49,6 +52,18 @@ export default function RandomColor(){
         Create Random color
         </button>
 
+        <div style={{
+            display : 'fixed',
+            justifyContent : 'center',
+            alignItems : 'center',
+            color : '#fff',
+            fontSize : '60px',
+            marginTop : '50px'
+        }}>
+            <h3>{typeOfColor === 'rgb' ? 'RGB' : 'HEX'}</h3>
+            <h1>{color}</h1>
+
+        </div>
 
 
     </div>
