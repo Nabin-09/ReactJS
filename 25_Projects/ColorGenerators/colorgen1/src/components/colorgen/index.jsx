@@ -38,11 +38,13 @@ function handleCreateRandomRgbColor () {
 
     return (
     <div  style = {{
-        width : '100vw',
-        height : '100vh',
+         position: 'fixed',
+        top: 0,
+        left: 0,
+        width : '100%',
+        height : '100%',
         backgroundColor : color,
         overflow : 'hidden',
-
         
     }} className="container">
     
@@ -53,12 +55,15 @@ function handleCreateRandomRgbColor () {
         </button>
 
         <div style={{
-            display : 'fixed',
+            display : 'flex',
             justifyContent : 'center',
             alignItems : 'center',
             color : '#fff',
             fontSize : '60px',
-            marginTop : '50px'
+            marginTop : '50px',
+            flexDirection : 'column',
+            gap : '40px',
+            overflow: 'hidden'
         }}>
             <h3>{typeOfColor === 'rgb' ? 'RGB' : 'HEX'}</h3>
             <h1>{color}</h1>
