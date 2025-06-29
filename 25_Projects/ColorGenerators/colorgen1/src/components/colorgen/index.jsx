@@ -26,7 +26,11 @@ export default function RandomColor(){
 
 
      function handleCreateRandomRgbColor (){
+        const r = randomColorUtility(256);
+        const g = randomColorUtility(256);
+        const b = randomColorUtility(256);
 
+        setColor(`rgb${r},${g},${b}`)
     }    
 
     return (
