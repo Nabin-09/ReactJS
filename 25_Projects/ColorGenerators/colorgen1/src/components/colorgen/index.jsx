@@ -75,3 +75,5 @@ function handleCreateRandomRgbColor () {
     );
 
 }
+// This marks the end of this mini project 
+
