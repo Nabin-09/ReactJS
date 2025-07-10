@@ -1,3 +1,4 @@
+
 import ProductItem from "./components/product-item"
 
 
@@ -8,7 +9,15 @@ function ProductList(){
     return(
         <>
         <h3>ECommerce Project</h3>
-        <ProductItem/>
+        {/* <ProductItem/> */}
+        {/* JSX with dynamic value */}
+        <ul>
+            {
+                dummyProductData.map(item =>(
+                    <li>{item}</li>
+                ))
+            }
+        </ul>
         </>
     )
 }
