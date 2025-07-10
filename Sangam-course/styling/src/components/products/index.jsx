@@ -13,8 +13,8 @@ function ProductList(){
         {/* JSX with dynamic value */}
         <ul>
             {
-                dummyProductData.map(item =>(
-                    <li>{item}</li>
+                dummyProductData.map((item , index) =>(
+                    <li key={index}>{item}</li>
                 ))
             }
         </ul>
