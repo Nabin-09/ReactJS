@@ -3,6 +3,7 @@ import './App.css'
 import ClassBasedComponent from './components/class-based-components'
 import FunctionalComponent from './components/functional-components'
 import ProductList from './components/products'
+import ContextButtonComponent from './components/create-context/button'
 
 function App() {
 
@@ -10,7 +11,9 @@ function App() {
     <>
         {/* <ClassBasedComponent/>
         <FunctionalComponent/>   */}
-        <ProductList name = "Nabin" city = "Siliguri"/>
+        {/* <ProductList name = "Nabin" city = "Siliguri"/> */}
+        <ContextButtonComponent/>
+        <ContextButtonComponent/>
     </>
   )
 }
