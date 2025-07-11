@@ -10,7 +10,7 @@ function App() {
     <>
         {/* <ClassBasedComponent/>
         <FunctionalComponent/>   */}
-        <ProductList/>
+        <ProductList name = "Nabin" city = "Siliguri"/>
     </>
   )
 }
