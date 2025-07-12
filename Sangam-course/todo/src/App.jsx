@@ -41,7 +41,7 @@ function App() {
   return (
     <div className={classes.mainWrapper}>
     <h1 className={classes.headerTitle}>Simple ToDo using material UI</h1>
-    <div>
+    <div className={classes.todoListWrapper}>
         {
           todoList && todoList.length> 0 ?
           todoList.map(todoItem => <TodoItem todo = {todoItem}/>) : null
