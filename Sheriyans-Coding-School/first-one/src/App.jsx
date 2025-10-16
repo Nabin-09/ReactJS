@@ -1,12 +1,10 @@
 import React from 'react'
+import Card from './components/Card'
 
 const App = () => {
   return (
     <div>
-      <div className="card">
-        <h1>Nabin Sharma</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, voluptatem.  </p>
-      </div>
+     <Card/>
     </div>
   )
 }
