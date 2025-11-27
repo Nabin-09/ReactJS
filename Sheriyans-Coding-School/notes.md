@@ -4,3 +4,7 @@
 - Named Export (name should strictly be the same)
 - Default Export (there is no need for the name to be same)
 
+## Components 
+- Atomic Design
+
+## Props 
