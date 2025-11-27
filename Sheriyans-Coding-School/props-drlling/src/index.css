@@ -5,7 +5,22 @@
   font-family: 'helvetica neue';
 }
 
-hmtl , body {
+html , body {
   height: 100%;
   width: 100%;
+}
+
+
+.parent{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+}
+
+.card{
+  height: 400px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 30px;
 }
