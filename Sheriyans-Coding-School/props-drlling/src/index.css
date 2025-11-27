@@ -8,14 +8,24 @@
 html , body {
   height: 100%;
   width: 100%;
+  
 }
-
+.card-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  gap: 30px;        /* space between cards */
+  padding: 30px;    /* padding around all cards */
+  background-color: #111;
+}
 
 .parent{
   height: 100vh;
   width: 100%;
   background-color: black;
   padding: 20px;
+  display: flex;
+  gap: 30px;
 }
 
 .card{
@@ -104,4 +114,12 @@ html , body {
   font-size: 17px;
   color: #8b8b8b;
 }
+
+.bottom p{
+  color: #8b8b8b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
 
